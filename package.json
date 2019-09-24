@@ -1,0 +1,48 @@
+{
+  "name": "mithril-todo",
+  "version": "1.0.0",
+  "description": "A todo app built with mithriljs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --require @babel/register tests/app.test.js",
+    "server": "nodemon --exec babel-node app.js",
+    "main": "parcel watch views/index.html --out-dir dist/src",
+    "dev": "concurrently --kill-others \"npm run server\" \"npm run main\""
+  },
+  "keywords": [
+    "mithril"
+  ],
+  "author": "lingcheisiong",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/node": "^7.6.1",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/register": "^7.6.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.22.12",
+    "sequelize-cli": "^5.5.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "@mdi/font": "^4.4.95",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "bunyan": "^1.8.12",
+    "concurrently": "^4.1.2",
+    "core-js": "^3.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.21.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.15",
+    "mithril": "^2.0.4",
+    "mysql2": "^1.7.0",
+    "popper.js": "^1.15.0",
+    "sequelize": "^5.19.0"
+  }
+}
