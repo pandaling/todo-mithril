@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "m@cmySQL1012",
-    "database": "mtodo",
+    "password": "youdatabasepassword",
+    "database": "yourdatabasename",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false,

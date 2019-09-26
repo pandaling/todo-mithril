@@ -7,7 +7,7 @@
     "test": "./node_modules/.bin/mocha --require @babel/register tests/app.test.js",
     "server": "nodemon --exec babel-node app.js",
     "main": "parcel watch views/index.html --out-dir dist/src",
-    "dev": "concurrently --kill-others \"npm run server\" \"npm run main\""
+    "start": "concurrently --kill-others \"npm run server\" \"npm run main\""
   },
   "keywords": [
     "mithril"
